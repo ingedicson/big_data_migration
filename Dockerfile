@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "load_data.py"]
+EXPOSE 5000
+
+ENTRYPOINT ["./entrypoint.sh"]
